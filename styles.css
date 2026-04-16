@@ -1,0 +1,205 @@
+body {
+    background: #c0c0c0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.forum-wrapper {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    border: 3px solid black;
+}
+
+.forum-header {
+    background: #6d6d9f;
+    padding: 15px;
+    border-bottom: 4px solid #e2be3ad6;
+    text-align: center;
+}
+
+.forum-header h1 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Microsoft Sans Serif', cursive;
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 8px;
+}
+
+.forum-header p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.forum-post {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0px;
+    border: 0px solid #000000;
+    background: #ffffff;
+}
+
+.forum-wrapper table,
+.forum-wrapper .forum-post {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.forum-post td {
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.tab-bar {
+    background: #808080;
+    padding: 8px 10px;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    background: #c0c0c0;
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    border: 2px outset #ffffff;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.tab:hover {
+    background: #e0e0e0;
+    border: 2px inset #ffffff;
+}
+
+/* highlight which page you're on */
+.tab.active {
+    background: #000080;
+    color: white;
+    border: 2px inset #ffffff;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.user-panel {
+    background: #e0e0e0;
+    border: 2px solid #808080;
+    padding: 12px;
+    text-align: center;
+    width: 160px;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #c0c0c0;
+    border: 4px solid #00aa00;
+    margin: 0 auto 10px auto;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.username {
+    font-weight: bold;
+    color: #0000aa;
+    margin-bottom: 8px;
+}
+
+.user-skills {
+    font-size: 11px;
+    color: #6b6b6b;
+    padding-top: 6px;
+}
+
+.user-dates {
+    font-size: 11px;
+    color: #333;
+    border-top: 1px dotted gray;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.post-content {
+    background: #f5f5dc;
+    padding: 15px;
+    vertical-align: top;
+    word-wrap: break-word;
+    border-left: 1px solid #808080;
+    overflow-wrap: break-word;
+}
+
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b0000;
+    border-bottom: 2px dashed #ff9900;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.post-text {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.signature {
+    border-bottom: 2px solid #ccc;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-size: 11px;
+    color: #555;
+    font-style: italic;
+}
+
+.post-text a {
+    color: #0000ee;
+    background: #ffffaa;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.post-text p,
+.post-text br {
+    margin: 0;
+    padding: 0;
+}
+
+.audio-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000080;
+    border-top: 3px solid #ff00ff;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+    font-family: 'Tahoma', sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+.audio-bar audio {
+    height: 32px;
+}
+
+/* add padding to body so content doesn't hide behind the audio bar */
+body {
+    padding-bottom: 60px;
+}
